@@ -2,6 +2,8 @@
 const tareaElegida = document.getElementById("tarea")
 //Obtenemos el elemento html donde vamos a inyectar el valor
 const estadoElegido = document.getElementById("estadoElegido")
+//Capturo el p que daré estilo segun el resultado
+const estadoElegidoP = document.getElementById("estado")
 
 //Función de cambio de estado
 function cambioEstado(){
@@ -11,14 +13,14 @@ function cambioEstado(){
 
     //Darle estilo según la opción elegida
     if(valorTarea === 'Completada'){
-        estadoElegido.style.backgroundColor = 'green'
-        estadoElegido.style.color = 'white'
+        estadoElegidoP.style.backgroundColor = 'green'
+        estadoElegidoP.style.color = 'white'
     }else if (valorTarea === 'Pendiente'){
-        estadoElegido.style.backgroundColor = 'red'
-        estadoElegido.style.color = 'white'
+        estadoElegidoP.style.backgroundColor = 'red'
+        estadoElegidoP.style.color = 'white'
     }else{
-        estadoElegido.style.backgroundColor = 'yellow'
-        estadoElegido.style.color = 'black'
+        estadoElegidoP.style.backgroundColor = 'yellow'
+        estadoElegidoP.style.color = 'black'
     }
 }
 

@@ -11,7 +11,12 @@ body{
     border-radius: 10px;
 }
 .form-control, .form-select{
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(255, 255, 255);
     outline: none;
     border-style: none;
+}
+p{
+    background-color: white;
+    padding: 8px 5px;
+    border-radius: 5px;
 }
