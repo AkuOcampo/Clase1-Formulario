@@ -1,0 +1,15 @@
+.container{
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:  rgb(165, 165, 165);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    
+}
+.estadoElegido{
+    color: black;
+}
+.boton{
+    margin: 0 auto;
+}

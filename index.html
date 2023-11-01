@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="row g-3" action="">
+            <div class="col-md-4 mb-3" >
+                <label for="id" class="form-label">Id: </label>
+                <input class="form-control" type="number" id="id">
+            </div>
+            <div class="col mb-3">
+                <label for="titulo" class="form-label">Titulo: </label>
+                <input class="form-control" type="text" id="titulo">
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+            </div>
+            <div class="col-md-10 mb-3">
+                <label for="formFile" class="form-label">Archivo: </label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="col mb-3">
+                <label for="tiempo" class="form-label">Tiempo</label>
+                <input class="form-control" type="number" id="tiempo">
+            </div>
+            <div class="col-md-9 mb-3">
+                <label for="responsable" class="form-label">Responsable: </label>
+                <input class="form-control" type="text" id="responsable">
+            </div>
+            <div class="col mb-3">
+                <label for="tarea" class="form-label">Proceso de tarea: </label>
+                <select class="form-select" id="tarea" name="tarea">
+                    <option selected>Tarea</option>
+                    <option value="Pendiente" >Pendiente</option>
+                    <option value="En-Proceso">En Proceso</option>
+                    <option value="En-Testing">En Testing</option>
+                    <option value="Completada">Completada</option>
+                </select>
+            </div>
+            <div>
+                <p>Estado seleccionado: <span id="estadoElegido"></span></p>
+            </div>
+            <div class="col-12 boton">
+                <button class="btn btn-success" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script> 
+</body>
+</html>
