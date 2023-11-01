@@ -1,15 +1,17 @@
+body{
+    background: linear-gradient(to right, rgb(135, 67, 190),rgb(34, 34, 236));
+}
 .container{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 50%;
     margin: 50px auto;
     padding: 20px;
-    background-color:  rgb(165, 165, 165);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    
+    background-color:  rgba(255, 255, 255, 0.5);
+    box-shadow: -4px -4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
-.estadoElegido{
-    color: black;
-}
-.boton{
-    margin: 0 auto;
+.form-control, .form-select{
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    border-style: none;
 }
